@@ -44,7 +44,7 @@ The first step is to compile LLVM on your machine
      llvm-project$ git checkout release/17.x
      llvm-project$ mkdir llvm/build
      llvm-project$ cd llvm/build
-     build$ cmake .. -G "Ninja" -DCMAKE_BUILD_TYPE=Debug -DLLVM_PARALLEL_LINK_JOBS=1
+     build$ cmake .. -G "Ninja" -DCMAKE_BUILD_TYPE=Debug -DLLVM_PARALLEL_LINK_JOBS=1 -DLLVM_ENABLE_TERMINFO=OFF
      build$ ninja
 ```
 To run tests, you need to build `lli`.
